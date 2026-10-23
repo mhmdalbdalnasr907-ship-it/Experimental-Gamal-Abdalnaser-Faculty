@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>كلية جمال عبدالناصر</title>
+  <style>
+    /* إعدادات الصفحة العامة */
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Tahoma, sans-serif;
+      line-height: 1.9;
+      color: #26352c;
+      background-color: #f0f2ed;
+    }
+
+    /* رأس الصفحة */
+    header {
+      background: linear-gradient(135deg, #173d2b, #496d4d);
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      border-bottom: 5px solid #c6a85b;
+    }
+
+    header img {
+      width: 250px;
+      height: 250px;
+      object-fit: contain;
+      border-bottom: 20px solid #ef1f1f;
+      border-radius: 60%;
+      padding: 3px;
+    }
+
+    header h1 {
+      margin: 10px 0 0;
+      font-size: 30px;
+    }
+
+    header p {
+      margin: 5px 0;
+      color: #f4e6b8;
+    }
+
+    /* شريط التنقل */
+    nav {
+      background-color: #102d20;
+      text-align: center;
+      padding: 12px 5px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+      padding: 7px 12px;
+      margin: 3px;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background-color: #c6a85b;
+      color: #102d20;
+    }
+
+    /* القسم الترحيبي */
+    .hero {
+      background: linear-gradient(rgba(15, 40, 25, 0.78), rgba(15, 40, 25, 0.78)), url("college.jpg");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 65px 20px;
+    }
+
+    .hero h2 {
+      font-size: 28px;
+      color: #f2d98c;
+    }
+
+    .hero a {
+      display: inline-block;
+      background-color: #c6a85b;
+      color: #142c1e;
+      padding: 10px 22px;
+      margin-top: 10px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* تنسيق الأقسام */
+    section {
+      max-width: 1000px;
+      margin: 25px auto;
+      padding: 25px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    section h2 {
+      color: #245238;
+      border-right: 5px solid #c6a85b;
+      padding-right: 12px;
+    }
+
+    /* البطاقات التعريفية */
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .card {
+      flex: 1 1 200px;
+      background-color: #f2f5ef;
+      border: 1px solid #dce4d8;
+      border-radius: 8px;
+      padding: 18px;
+      text-align: center;
+    }
+
+    .card h3 {
+      color: #245238;
+    }
+
+    /* الجدول */
+    .table-container {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+    }
+
+    th,
+    td {
+      border: 1px solid #cbd5c8;
+      padding: 12px;
+    }
+
+    th {
+      background-color: #245238;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f0f4ed;
+    }
+
+    /* الروابط */
+    .links a {
+      color: #245238;
+      font-weight: bold;
+    }
+
+    /* نموذج التواصل */
+    form {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    label {
+      display: block;
+      margin-top: 12px;
+      font-weight: bold;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      border: 1px solid #b8c5b5;
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 16px;
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    button {
+      background-color: #245238;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 12px 25px;
+      margin-top: 15px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #416c4d;
+    }
+
+    /* أسفل الصفحة */
+    footer {
+      background-color: #102d20;
+      color: white;
+      text-align: center;
+      padding: 22px;
+      margin-top: 30px;
+    }
+
+    footer a {
+      color: #f2d98c;
+    }
+
+    /* تحسين العرض على الهواتف */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 23px;
+      }
+
+      .hero {
+        padding: 40px 15px;
+      }
+
+      section {
+        margin: 15px 10px;
+        padding: 18px;
+      }
+
+      nav a {
+        padding: 5px 7px;
+        font-size: 14px;
+      }
+    }
+
+    nav button {
+      color: hwb(34 5% 5%);
+      border: none;
+      display: inline-block;
+      padding: 7px 12px;
+      margin: 3px;
+      border-radius: 5px;
+      font-family: inherit;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    nav button:hover {
+      background-color: #c6a85b;
+      color: #102d20;
+    }
+  </style>
+</head>
+
+<body> <!-- رأس الصفحة وشعار الكلية -->
+  <header id="home"> <img src="الأكاديمية العسكرية.png" alt="صورة أو شعار الكلية">
+    <h1>كلية جمال عبدالناصر</h1>
+    <p>الكلية الأكاديمية العسكرية للدراسات العليا</p>
+    <p>العلم • الانضباط • القيادة • التميز</p>
+  </header> <!-- قائمة التنقل بين أقسام الصفحة -->
+
+  <nav>
+    <button type="button" onclick="window.location.href='faculty.html'">الرئيسية</button>
+    <button type="button" onclick="window.location.href='faculty.html#about'">عن الكلية</button>
+    <button type="button" onclick="window.location.href='sections.html'">الأقسام</button>
+    <button type="button" onclick="window.location.href='tables.html'">الجدول الدراسي</button>
+    <button type="button" onclick="window.location.href='faculty.html#links'">روابط مهمة</button>
+    <button type="button" onclick="window.location.href='connect.html'">تواصل معنا</button>
+  </nav>
+
+  <!-- القسم الترحيبي -->
+  <div class="hero">
+    <h2>مرحباً بكم في موقع الكلية</h2>
+    <p> صفحة تعريفية تهدف إلى تقديم معلومات عن الكلية وأهداف التعليم والدراسة فيها. </p> <a href="#about">اكتشف
+      المزيد</a>
+  </div> <!-- نبذة تعريفية عن الكلية -->
+  <section id="about">
+    <h2>نبذة عن الكلية</h2>
+    <p> تم إعداد هذه الصفحة للتعريف بكلية جمال عبدالناصر والكلية الأكاديمية العسكرية للدراسات العليا، مع
+      عرض معلومات عامة عن التعليم والدراسة والتأهيل العلمي والقيادي. </p>
+    <p> تهتم الدراسات العسكرية العليا بتنمية المعرفة، وتطوير مهارات البحث والتحليل، وتعزيز القدرة على التخطيط واتخاذ
+      القرارات، وفهم القضايا الاستراتيجية. </p>
+  </section> <!-- عرض أهداف الكلية في بطاقات -->
+  <section id="goals">
+    <h2>أهداف الدراسة</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>التأهيل العلمي</h3>
+        <p>تطوير المعارف والمهارات العلمية.</p>
+      </div>
+      <div class="card">
+        <h3>البحث والتحليل</h3>
+        <p>تنمية مهارات البحث ودراسة الموضوعات.</p>
+      </div>
+      <div class="card">
+        <h3>القيادة والتخطيط</h3>
+        <p>التعرف على أساليب التخطيط واتخاذ القرار.</p>
+      </div>
+    </div>
+  </section> <!-- روابط مهمة -->
+  <section id="links" class="links">
+    <h2>روابط مهمة</h2>
+    <p> الموقع الرسمي للأكاديمية العسكرية للدراسات العليا والاستراتيجية: </p>
+    <p> <a href="https://www.mapss.edu.eg/" target="_blank" rel="noopener"> زيارة الموقع الرسمي </a> </p>
+    <p> يمكنك الرجوع إلى الموقع الرسمي للتأكد من أسماء الأقسام والمعلومات المعتمدة. </p>
+  </section>
+  <!-- تذييل الصفحة -->
+  <footer>
+    <p>كلية جمال عبدالناصر</p>
+    <a href="#home">العودة إلى أعلى الصفحة ↑</a>
+  </footer>
+
+</body>
+
+</html>

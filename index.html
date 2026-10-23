@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>كلية جمال عبدالناصر - تسجيل الدخول</title>
+
+  <style>
+    /* تنسيق الصفحة العامة */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #6e75b0;
+      padding: 30px 15px;
+      margin: 0;
+    }
+
+    header {
+      background: linear-gradient(13deg, #4e7193, #08efa0);
+      color: hwb(0 34% 7% / 0.5764705882352941);
+      text-align: center;
+      padding: 2px 5px;
+
+    }
+
+    /* مربع اسم الكلية */
+    .colleges-ename {
+      max-width: 150px;
+      height: 2px;
+      margin: 1 auto 2px;
+      padding: 1px 1px;
+      background-color: hwb(35 20% 39%);
+      border: 1px solid #f4a422;
+      border-radius: 50px;
+      text-align: center;
+      color: #000000;
+      font-size: 2px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    /* مربع اسم الكلية */
+    .college-enames {
+      max-width: 500px;
+      margin: 1 auto 2px;
+      padding: 5px 10px;
+      border: 0px solid #f4a422;
+      border-radius: 50px;
+      text-align: center;
+      color: #000000;
+      font-size: 25px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    /* مربع اسم الكلية */
+    .college-ename {
+      max-width: 500px;
+      margin: 1 auto 20px;
+      padding: 5px 10px;
+      background-color: hwb(212 26% 47%);
+      border: 0px solid #f18e66;
+      border-radius: 1px;
+      text-align: center;
+      color: #f1ca3a;
+      font-size: 25px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    header img {
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+      border-radius: 20%;
+      background-color: hwb(240 29% 41%);
+      padding: 2px;
+    }
+
+    header h1 {
+      margin: 10px 0 0;
+      font-size: 30px;
+    }
+
+    header p {
+      margin: 5px 0;
+      color: #fbe496;
+    }
+
+    /* مربع اسم الكلية */
+    .college-name {
+      max-width: 500px;
+      margin: 0 auto 20px;
+      padding: 5px 10px;
+      background-color: hwb(207 29% 42%);
+      border: 0px solid #2c6713;
+      border-radius: 1px;
+      text-align: center;
+      color: #eedb66;
+      font-size: 25px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    /* مربع تسجيل الدخول */
+    .login-box {
+      max-width: 400px;
+      margin: auto;
+      padding: 25px;
+      background-color: hwb(265 29% 1%);
+      border-radius: 10px;
+      box-shadow: 0 3px 12px #cccccc;
+    }
+
+    h2 {
+      text-align: center;
+      color: #fddc41;
+    }
+
+    /* عناوين الحقول */
+    label {
+      display: block;
+      color: #ffe83b;
+      margin-top: 15px;
+    }
+
+    /* حقول الإدخال */
+    input {
+      width: 100%;
+      padding: 11px;
+      margin-top: 5px;
+      border: 1px solid #dc4444;
+      background-color: #c3dfef;
+      border-radius: 5px;
+      font-size: 15px;
+    }
+
+    /* إطار أحمر عند الخطأ */
+    .error-input {
+      border: 2px solid red;
+    }
+
+    /* رسائل الخطأ */
+    .error-message {
+      color: red;
+      font-size: 14px;
+      display: block;
+      margin-top: 5px;
+    }
+
+    /* زر تسجيل الدخول */
+    button {
+      width: 90%;
+      padding: 12px;
+      margin-top: 15px;
+      background-color: #0c7336;
+      color: hwb(50 31% 5%);
+      border: none;
+      border-radius: 15px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #416c4d;
+    }
+
+    /* رسالة النتيجة */
+    #result {
+      text-align: center;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    /* ملاءمة اسم الكلية للشاشات الصغيرة */
+    @media (max-width: 380px) {
+      .college-name {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="college-enames">إعداد/الطالب:عبدالناصر</div>
+  </header>
+  <div class="colleges-ename"></div>
+  <div class="college-ename">
+    كلية جمال عبدالناصر
+  </div>
+  <!-- رأس الصفحة وشعار الكلية -->
+  <header id="home"> <img src="جمال عبدالناصر.jpg" alt="صورة أو شعار الكلية">
+    <p>أكاديمية جمال العسكرية للدراسات العليا</p>
+  </header>
+  <!-- اسم الكلية داخل مربع فضي -->
+  <div class="college-name">
+    تـرحـب بـالـجـمـيـع
+  </div>
+
+  <!-- مربع تسجيل دخول الطالب -->
+  <div class="login-box">
+
+    <h2>لتسجيل الدخول </h2>
+    <h3>قـم بـمـايــلـي:</h3>
+
+    <form id="loginForm" novalidate>
+
+      <!-- حقل اسم المستخدم -->
+      <label for="username">اسم المستخدم:</label>
+
+      <input type="text" id="username" placeholder="أدخل اسم المستخدم" autocomplete="username" required>
+
+      <small id="usernameError" class="error-message"></small>
+
+
+      <!-- حقل البريد الإلكتروني -->
+      <label for="email">البريد الإلكتروني:</label>
+
+      <input type="email" id="email" placeholder="example@gmail.com" autocomplete="email" required>
+
+      <small id="emailError" class="error-message"></small>
+
+
+      <!-- حقل كلمة المرور -->
+      <label for="password">كلمة المرور:</label>
+
+      <input type="password" id="password" placeholder="أدخل كلمة المرور" autocomplete="current-password" required>
+
+      <small id="passwordError" class="error-message"></small>
+
+
+      <!-- زر تسجيل الدخول -->
+      <button type="submit">تـسـجـيـل الـدخـول</button>
+
+      <!-- عرض نتيجة تسجيل الدخول -->
+      <p id="result"></p>
+
+    </form>
+
+  </div>
+
+  <script>
+        // الحصول على عناصر الصفحة
+        const form = document.getElementById("loginForm");
+
+        const username = document.getElementById("username");
+        const email = document.getElementById("email");
+        const password = document.getElementById("password");
+
+        const usernameError = document.getElementById("usernameError");
+        const emailError = document.getElementById("emailError");
+        const passwordError = document.getElementById("passwordError");
+
+        const result = document.getElementById("result");
+
+        // تنفيذ الفحص عند الضغط على زر تسجيل الدخول
+        form.addEventListener("submit", function(event) {
+
+            // منع إعادة تحميل الصفحة
+            event.preventDefault();
+
+            // مسح رسائل الخطأ السابقة
+            usernameError.textContent = "";
+            emailError.textContent = "";
+            passwordError.textContent = "";
+            result.textContent = "";
+
+            // إزالة الإطارات الحمراء السابقة
+            username.classList.remove("error-input");
+            email.classList.remove("error-input");
+            password.classList.remove("error-input");
+
+            let hasError = false;
+
+            // فحص اسم المستخدم
+            if (username.value.trim() === "") {
+                usernameError.textContent =
+                    "يرجى إدخال اسم المستخدم.";
+
+                username.classList.add("error-input");
+                hasError = true;
+            } 
+
+            // فحص البريد الإلكتروني
+            if (email.value.trim() === "") {
+                emailError.textContent =
+                    "يرجى إدخال البريد الإلكتروني.";
+
+                email.classList.add("error-input");
+                hasError = true;
+
+            } else if (
+                !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())
+            ) {
+                emailError.textContent =
+                    "صيغة البريد الإلكتروني غير صحيحة.";
+
+                email.classList.add("error-input");
+                hasError = true;
+            }
+
+            // فحص كلمة المرور: يجب ألا تكون فارغة
+            if (password.value.trim() === "") {
+                passwordError.textContent =
+                    "يرجى إدخال كلمة المرور.";
+
+                password.classList.add("error-input");
+                hasError = true;
+            } else {}
+
+            // التوقف إذا كانت هناك حقول فارغة أو بيانات غير مكتملة
+            if (hasError) {
+                return;
+            } 
+// قبول أي اسم مستخدم وبريد إلكتروني وكلمة مرور
+// بعد التأكد من أن الحقول ممتلئة وأن البريد الإلكتروني صحيح
+
+result.style.color = "#19c619";
+result.textContent = "تم تسجيل الدخول بنجاح";
+
+// الانتقال إلى الصفحة الثانية
+window.location.href = "faculty.html";
+
+        });
+    </script>
+
+</body>
+
+</html>

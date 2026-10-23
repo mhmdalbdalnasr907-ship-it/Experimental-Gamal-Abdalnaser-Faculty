@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الأقسام والمواد - كلية جمال عبدالناصر</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Tahoma, sans-serif;
+      line-height: 1.9;
+      color: #26352c;
+      background-color: #f0f2ed;
+    }
+
+    header img {
+      width: 250px;
+      height: 250px;
+      object-fit: contain;
+      border-radius: 50%;
+      border-bottom: 20px solid Red;
+      padding: 5px;
+    }
+
+    header h2 {
+      margin: 10px 0 0;
+      font-size: 30px;
+    }
+
+    header p {
+      margin: 5px 0;
+      color: #f4e6b8;
+    }
+
+    header {
+      background: linear-gradient(135deg, #173d2b, #496d4d);
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      border-bottom: 5px solid #c6a85b;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    input,
+    textarea {
+      width: 102d20;
+      padding: 12px;
+      margin-top: 5px;
+      border: 2px solid #b8c5b5;
+      background-color: #ebc47a;
+      border-radius: 15px;
+      font-family: inherit;
+      font-size: 20px;
+    }
+
+    nav {
+      background-color: #102d20;
+      text-align: center;
+      padding: 10px;
+    }
+
+    button {
+      background-color: #245238;
+      color: hwb(31 11% 14%);
+      border: none;
+      border-radius: 6px;
+      padding: 10px 18px;
+      margin: 4px;
+      font-size: 18px;
+      font-family: inherit;
+      cursor: pointer;
+    }
+
+
+    button:hover {
+      background-color: #c6a85b;
+      color: #102d20;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 25px auto;
+      padding: 25px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    h2,
+    h3 {
+      color: #245238;
+    }
+
+    h2 {
+      border-right: 5px solid #c6a85b;
+      padding-right: 12px;
+    }
+
+    .card {
+      background-color: #f2f5ef;
+      border: 1px solid #dce4d8;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 12px 0;
+    }
+
+    footer {
+      background-color: #102d20;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 600px) {
+      section {
+        margin: 15px 10px;
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- رأس الصفحة وشعار الكلية -->
+  <header id="home"> <img src="الأكاديمية العسكرية.png" alt="صورة أو شعار الكلية">
+    <h1>كلية جمال عبدالناصر</h1>
+    <h1> <input type="submit" value="الأقـسـام الــدراســية"> </h1>
+  </header>
+  <nav> <button onclick="window.location.href='faculty.html'">الرئيسية</button> <button
+      onclick="window.location.href='sections.html'">الأقسام</button> <button
+      onclick="window.location.href='tables.html'">الجدول الدراسي</button> <button
+      onclick="window.location.href='connect.html'">تواصل معنا</button> </nav>
+  <section>
+    <h2>الأقسام</h2>
+    <div class="card">
+      <h3>قسم الحرب العليا</h3>
+      <p>المواد:</p>
+      <ul>
+        <li>الدراسات الاستراتيجية</li>
+        <li>التخطيط العسكري</li>
+        <li>تحليل العمليات</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>قسم الدفاع الوطني</h3>
+      <p>المواد:</p>
+      <ul>
+        <li>الأمن القومي</li>
+        <li>إدارة الأزمات</li>
+        <li>السياسات الاستراتيجية</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>قسم القادة والأركان</h3>
+      <p>المواد:</p>
+      <ul>
+        <li>القيادة والإدارة</li>
+        <li>التخطيط والعمليات</li>
+        <li>البحث والتحليل</li>
+      </ul>
+    </div> <button onclick="window.location.href='faculty.html'"> العودة إلى الرئيسية </button>
+  </section>
+  <footer>
+    <p>كلية جمال عبدالناصر</p>
+  </footer>
+</body>
+
+</html>
